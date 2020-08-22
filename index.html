@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHPMailer</title>
+</head>
+<body>
+    <h1>FORMULARIO DE PRUEBA PARA ENVIO DE CORREO</h1>
+    <h3>En el dominio autolineasvillarreal.com.mx</h3>
+    <hr>
+    
+    <form action="sendmail.php" method="post">
+        <p>
+            <label for="destinatario">Destinatario: </label> <br>
+            <input type="text" name="destinatario" placeholder="Separados por ;">
+        </p>
+        <p>
+            <label for="asunto">Asunto: </label> <br>
+            <input type="text" name="asunto">
+        </p>
+        
+        <p>
+            <label for="mesaje">Mensaje: </label> <br>
+            <textarea name="mensaje" cols="30" rows="10"></textarea>
+        </p>
+        
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
