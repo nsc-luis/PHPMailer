@@ -6,13 +6,13 @@
     $mail->SMTPDebug = 2;
 
     // PARAMETROS DEL CORREO
-    $mail->Host = 'mail.autolineasvillarreal.com.mx';
+    $mail->Host = '[SERVIDOR_SMTP]';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'cartasdirector@autolineasvillarreal.com.mx';
-    $mail->Password = 'Hnm$LfCVoTkQ';
-    $mail->setFrom('cartasdirector@autolineasvillarreal.com.mx', 'Cartas al director');
-    $mail->addReplyTo('cartasdirector@autolineasvillarreal.com.mx', 'Cartas al director');
+    $mail->Username = '[CORREO_COMPLETO]';
+    $mail->Password = '[PASSWORD]';
+    $mail->setFrom('[CORREO_COMPLETO]', 'Cartas al director');
+    $mail->addReplyTo('[CORREO_COMPLETO]', 'Cartas al director');
     // $mail->addAddress($_POST['destinatario'], 'Destinatario');
 
     $destinatarios = explode(";", $_POST['destinatario']);
